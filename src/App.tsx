@@ -10,11 +10,13 @@ function App() {
       <AuthProvider>
         <Toaster position="top-center" />
         <Routes>
+          <Route path="/" element={<Login />} />
           <Route path="/login" element={<Login />} />
           <Route path="/update-profile" element={<UpdateProfile />} />
-          {/* Add other routes as needed */}
         </Routes>
       </AuthProvider>
     </Router>
   );
 }
+
+export default App;
